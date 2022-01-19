@@ -17,7 +17,7 @@ jobs:
       - name: Build PlantUML SVG
         uses: docker://miy4/plantuml
         with:
-          args: -tsvg -charset utf-8 -r -o${GITHUB_WORKSPACE}/src/main/mkdocs/site/images -I${GITHUB_WORKSPACE}/src/main/mkdocs/site/*.puml
+          args: -tsvg -charset utf-8 -r -osrc/main/mkdocs/site/images -Isrc/main/mkdocs/site/*.puml
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
