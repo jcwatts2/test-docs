@@ -23,6 +23,6 @@ jobs:
         with:
           python-version: 3.x
       - name: Install Mkdocs
-      - run: pip install mkdocs mkdocs-material mkdocs-markdownextradata-plugin mkdocs-build-plantuml-plugin
+        run: pip install mkdocs mkdocs-material mkdocs-markdownextradata-plugin mkdocs-build-plantuml-plugin
       - name: Build Mkdocs and Deploy Site
-      - run: mkdocs gh-deploy --force --site-dir docs --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
+        run: mkdocs gh-deploy --force --site-dir docs --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
