@@ -12,7 +12,13 @@ jobs:
         ports:
           - "8100:8080"
     steps:
+      - name: Checkout Project
       - uses: actions/checkout@v2
+      - name: Build PlantUML SVG
+        uses: docker://miy4/plantuml
+        with:
+          args: -tsvg -charset utf-8 -r -dir${GITHUB_WORKSPACE}/src/main/mkdocs/site/images -I${GITHUB_WORKSPACE}/src/main/mkdocs/site/*.puml
+      - name: Build MkDocs and Publish
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
