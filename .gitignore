@@ -1,0 +1,13 @@
+*.svg
+*.pdf
+*.png
+.DS_Store
+*.idea
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ignore Image Build Directory
+src/main/mkdocs/site/images

@@ -1,0 +1,38 @@
+---
+version: "3.9"
+services:
+  plantuml:
+    container_name: plantuml
+    image: plantuml/plantuml-server
+    ports:
+      - "8100:8080"
+  devmkdocs:
+    container_name: mkdocs
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${PWD}/src/main/mkdocs:/docs
+    working_dir: /docs
+    depends_on:
+      - plantuml
+    #command:
+    #  - serve
+    #  - "-a0.0.0.0:8000"
+
+#  mkdocs:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      target: dev
+#    ports:
+#      - "8000:8000"
+#    volumes:
+#      - ${PWD}/src/main/doc:/app
+#    working_dir: /app
+#    command:
+#      - serve
+#      - "-a0.0.0.0:8000"

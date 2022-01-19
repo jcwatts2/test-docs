@@ -1,0 +1,12 @@
+@startuml
+
+    title Main Component
+
+
+    component CA
+    component CB
+
+    CA ..> CB : someInfo
+
+
+@enduml
