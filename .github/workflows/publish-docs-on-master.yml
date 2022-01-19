@@ -13,10 +13,6 @@ jobs:
           - "8100:8080"
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          architecture: 'x86'
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
