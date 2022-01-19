@@ -16,5 +16,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
+      - run: pip install mkdocs mkdocs-material mkdocs-markdownextradata-plugin mkdocs-build-plantuml-plugin
       - run: mkdocs gh-deploy --force --site-dir docs --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
