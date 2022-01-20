@@ -8,7 +8,7 @@ for i in $(find ${SITE_DIR} -name *.puml)
 do
   echo "File: $i"
 
-  REL_FILE=$(echo $i | sed -e "s/${SITE_DIR}//")
+  REL_FILE=$(echo $i | sed -e "s|${SITE_DIR}||")
 
   echo "REL: ${REL_FILE}"
 
