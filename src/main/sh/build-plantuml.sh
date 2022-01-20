@@ -11,8 +11,8 @@ do
 
   echo "REL: ${REL_DIR}"
 
-  echo "${IMAGES_DIR}${REL_FILE}"
+  echo "${IMAGES_DIR}${REL_DIR}"
 
-  java -jar /app/plantuml.jar -tsvg -charset utf-8 -r -o ${IMAGES_DIR}${REL_FILE} $i
+  java -jar /app/plantuml.jar -tsvg -charset utf-8 -r -o ${IMAGES_DIR}${REL_DIR} $i
 
 done
