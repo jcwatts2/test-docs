@@ -79,3 +79,4 @@ nav:
       - Main Component: "components/main/index.md"
   - Flows:
       - Test Flow: "flows/test-flow/index.md"
+      - Test Flow2: "flows/test-flow2/index.md"
