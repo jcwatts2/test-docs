@@ -1,5 +1,5 @@
 
-SITE_DIR="${GITHUB_WORKSPACE}/src/min/mkdocs/site"
+SITE_DIR="${GITHUB_WORKSPACE}/src/main/mkdocs/site"
 IMAGES_DIR="${SITE_DIR}/images"
 
 for i in $(find ${SITE_DIR} -name *.puml)
