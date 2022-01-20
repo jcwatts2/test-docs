@@ -1,5 +1,5 @@
 # Main Component
 
 
-![Main Component Diagram](/images/components/main/component.svg)
+![Main Component Diagram](/test-docs/images/components/main/component.svg)
 
