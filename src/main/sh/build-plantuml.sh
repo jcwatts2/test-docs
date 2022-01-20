@@ -7,10 +7,10 @@ mkdir IMAGES_DIR
 for i in $(find ${SITE_DIR} -name *.puml)
 do
   echo "File: $i"
-  REL_FILE=$(echo $i | sed -e "s|${SITE_DIR}||" -e "s|\/[A-Za-z1-9-]\+\.puml$||")
+  REL_DIR=$(echo $i | sed -e "s|${SITE_DIR}||" -e "s|\/[A-Za-z1-9-]\+\.puml$||")
 
-  echo "REL: ${REL_FILE}"
+  echo "REL: ${REL_DIR}"
 
-  #java -jar /app/plantuml.jar -tsvg -charset utf-8 -r -o ${IMAGES_DIR}${REL_FILE} -I $i
+  java -jar /app/plantuml.jar -tsvg -charset utf-8 -r -o ${IMAGES_DIR}${REL_FILE} $i
 
 done
