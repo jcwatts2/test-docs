@@ -7,7 +7,7 @@ mkdir IMAGES_DIR
 for i in $(find ${SITE_DIR} -name *.puml)
 do
   echo "File: $i"
-  REL_FILE=$(echo $i | sed -e "s|${SITE_DIR}||" -e "s|\/[A-Za-z1-9-]+\.puml$||")
+  REL_FILE=$(echo $i | sed -e "s|${SITE_DIR}||" -e "s|\/[A-Za-z1-9-]\+\.puml$||")
 
   echo "REL: ${REL_FILE}"
 
