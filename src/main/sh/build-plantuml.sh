@@ -6,12 +6,9 @@ mkdir IMAGES_DIR
 
 for i in $(find ${SITE_DIR} -name *.puml)
 do
-  echo "File: $i"
   REL_DIR=$(echo $i | sed -e "s|${SITE_DIR}||" -e "s|\/[A-Za-z1-9-]\+\.puml$||")
 
-  echo "REL: ${REL_DIR}"
-
-  echo "${IMAGES_DIR}${REL_DIR}"
+  echo "Generating PlantUML ${i} to directory ${IMAGES_DIR}${REL_DIR}"
 
   java -jar /app/plantuml.jar -tsvg -charset utf-8 -r -o ${IMAGES_DIR}${REL_DIR} $i
 
