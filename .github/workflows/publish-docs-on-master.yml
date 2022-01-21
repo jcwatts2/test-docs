@@ -14,16 +14,18 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Build PlantUML SVG
-        uses: docker://miy4/plantuml
-        with:
-          entrypoint: /bin/sh
-          args: src/main/sh/build-plantuml.sh
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.x
       - name: Install Mkdocs
         run: pip install mkdocs mkdocs-material mkdocs-markdownextradata-plugin mkdocs-build-plantuml-plugin
+      - name: Build Mkdocs
+        run: mkdocs build --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
+      - name: Build PlantUML SVG
+        uses: docker://miy4/plantuml
+        with:
+          entrypoint: /bin/sh
+          args: src/main/sh/build-plantuml.sh
       - name: Build Mkdocs and Deploy Site
         run: mkdocs gh-deploy --force --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
