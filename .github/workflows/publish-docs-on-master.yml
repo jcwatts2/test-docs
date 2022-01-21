@@ -6,11 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    services:
-      plantuml:
-        image: plantuml/plantuml-server
-        ports:
-          - "8100:8080"
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -25,7 +20,6 @@ jobs:
       - name: Build PlantUML SVG
         uses: docker://miy4/plantuml
         with:
-          #entrypoint: /bin/sh
           args: -v -tsvg -I **/*.puml -r ${GITHUB_WORKSPACE}/src/main/mkdocs/docs
       - name: Build Mkdocs and Deploy Site
         run: mkdocs gh-deploy --force --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
