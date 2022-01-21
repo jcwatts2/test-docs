@@ -10,4 +10,4 @@
 build
 
 # Ignore Image Build Directory
-src/main/mkdocs/site/images
+src/main/mkdocs/site

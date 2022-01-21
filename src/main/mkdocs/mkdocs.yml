@@ -3,7 +3,7 @@ site_name: Platform
 # Meta tags (placed in header)
 site_description: 
 #site_author: Your Name
-site_url: https://jcwatts2.github.io/test-docs
+#site_url: https://jcwatts2.github.io/test-docs
 
 # Repository (add link to repository on each page)
 #repo_name: diagrams
@@ -13,8 +13,8 @@ site_url: https://jcwatts2.github.io/test-docs
 #Copyright (shown at the footer)
 #copyright: 'Copyright &copy; 2017 Your Name'
 
-docs_dir: "site"
-site_dir: "built-site"
+docs_dir: "docs"
+site_dir: "site"
 
 # Meterial theme
 theme:
@@ -30,8 +30,8 @@ plugins:
   - build_plantuml:
       render: "server"
       output_format: svg
-      diagram_root: "site"
-      output_folder: "images"
+      diagram_root: "docs"
+      output_folder: "."
       input_folder: "."
       input_extensions: "plantuml,puml"
       server: "http://plantuml:8080"
