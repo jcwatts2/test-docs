@@ -1,3 +1,3 @@
 # Test Flow
 
-![Test Flow](test-flow.svg)
+![Test Flow](./test-flow.svg)

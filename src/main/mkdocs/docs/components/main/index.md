@@ -1,5 +1,5 @@
 # Main Component
 
 
-![Main Component Diagram](component.svg)
+![Main Component Diagram](./component.svg)
 
