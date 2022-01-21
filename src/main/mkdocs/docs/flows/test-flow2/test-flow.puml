@@ -8,6 +8,6 @@
     participant ComponentB as b
 
 
-    a -> b : someCall
+    a -> b : someCallAltered
 
 @enduml
