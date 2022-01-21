@@ -25,7 +25,7 @@ jobs:
       - name: Build PlantUML SVG
         uses: docker://miy4/plantuml
         with:
-          entrypoint: /bin/sh
-          args: src/main/sh/build-plantuml.sh
+          #entrypoint: /bin/sh
+          args: -v -tsvg -r ${GITHUB_WORKSPACE}/src/main/mkdocs/docs/**/*.puml
       - name: Build Mkdocs and Deploy Site
         run: mkdocs gh-deploy --force --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
