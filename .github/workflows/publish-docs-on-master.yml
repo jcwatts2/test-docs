@@ -26,6 +26,6 @@ jobs:
         uses: docker://miy4/plantuml
         with:
           #entrypoint: /bin/sh
-          args: -v -tsvg -r ${GITHUB_WORKSPACE}/src/main/mkdocs/docs/**/*.puml
+          args: -v -tsvg -I **/*.puml -r ${GITHUB_WORKSPACE}/src/main/mkdocs/docs
       - name: Build Mkdocs and Deploy Site
         run: mkdocs gh-deploy --force --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
