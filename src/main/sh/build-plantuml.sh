@@ -1,4 +1,4 @@
-SITE_DIR="${RUNNER_WORKSPACE}/src/main/mkdocs/site"
+SITE_DIR="${GITHUB_WORKSPACE}/src/main/mkdocs/docs"
 DOCS_DIR="${GITHUB_WORKSPACE}/src/main/mkdocs/docs"
 
 mkdir IMAGES_DIR
