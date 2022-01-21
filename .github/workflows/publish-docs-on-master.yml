@@ -17,9 +17,8 @@ jobs:
       - name: Build PlantUML SVG
         uses: docker://miy4/plantuml
         with:
-          args: -tsvg -charset utf-8 -r -o ${GITHUB_WORKSPACE}/src/main/mkdocs/site ${GITHUB_WORKSPACE}/src/main/mkdocs/docs
-          #entrypoint: /bin/sh
-          #args: src/main/sh/build-plantuml.sh
+          entrypoint: /bin/sh
+          args: src/main/sh/build-plantuml.sh
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
@@ -27,4 +26,4 @@ jobs:
       - name: Install Mkdocs
         run: pip install mkdocs mkdocs-material mkdocs-markdownextradata-plugin mkdocs-build-plantuml-plugin
       - name: Build Mkdocs and Deploy Site
-        run: mkdocs gh-deploy --force --site-dir docs --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
+        run: mkdocs gh-deploy --force --config-file ${GITHUB_WORKSPACE}/src/main/mkdocs/mkdocs.yml
