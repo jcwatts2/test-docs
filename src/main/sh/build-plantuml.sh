@@ -1,5 +1,5 @@
-SITE_DIR="${GITHUB_WORKSPACE}/src/main/mkdocs/site"
-DOCS_DIR="${GITHUB_WORKSPACE}/src/main/mkdocs/docs"
+SITE_DIR="${RUNNER_WORKSPACE}/src/main/mkdocs/site"
+DOCS_DIR="${RUNNER_WORKSPACE}/src/main/mkdocs/docs"
 
 mkdir IMAGES_DIR
 
