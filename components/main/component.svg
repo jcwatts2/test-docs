@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="334px" preserveAspectRatio="none" style="width:160px;height:334px;background:#FFFFFF;" version="1.1" viewBox="0 0 160 334" width="160px" zoomAndPan="magnify"><defs><filter height="300%" id="f186e02iyc2mkf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="151" x="2" y="16.708">Main Component</text><!--MD5=[7b252b082557083cb6afa3ae89fae9bf]
+entity CA--><rect fill="#FEFECE" filter="url(#f186e02iyc2mkf)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="59" x="39" y="27.9531"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="78" y="32.9531"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76" y="34.9531"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76" y="38.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="19" x="54" y="60.9482">CA</text><!--MD5=[b9a6fa3e926141d370e499cfdaf642ce]
+entity CB--><rect fill="#FEFECE" filter="url(#f186e02iyc2mkf)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="60" x="38.5" y="150.9531"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="78.5" y="155.9531"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76.5" y="157.9531"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76.5" y="161.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="53.5" y="183.9482">CB</text><!--MD5=[36dc586d67e0f1d076b0ce70c9875d3e]
+entity CC--><rect fill="#FEFECE" filter="url(#f186e02iyc2mkf)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="60" x="38.5" y="273.9531"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="78.5" y="278.9531"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76.5" y="280.9531"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="76.5" y="284.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="53.5" y="306.9482">CC</text><!--MD5=[cdaee85341eea05508057d0c13283e66]
+link CA to CB--><path d="M68.5,74.1431 C68.5,94.3631 68.5,124.2631 68.5,145.8731 " fill="none" id="CA-to-CB" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="68.5,150.9031,72.5,141.9031,68.5,145.9031,64.5,141.9031,68.5,150.9031" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="69.5" y="117.02">someInfo</text><!--MD5=[847dea2e817a230308feba5f858f2cca]
+link CB to CC--><path d="M68.5,197.1431 C68.5,217.3631 68.5,247.2631 68.5,268.8731 " fill="none" id="CB-to-CC" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="68.5,273.9031,72.5,264.9031,68.5,268.9031,64.5,264.9031,68.5,273.9031" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="69.5" y="240.02">testInfo</text><!--MD5=[b217c04d4ecd239fa9faa66ccc154120]
+@startuml
+
+    title Main Component
+
+
+    component CA
+    component CB
+    component CC
+
+    CA ..> CB : someInfo
+    CB ..> CC : testInfo
+
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 13:26:11 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

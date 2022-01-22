@@ -1,0 +1,13 @@
+@startuml
+
+    title Main Test Flow 2
+
+    actor Client as client
+
+    participant ComponentA as a
+    participant ComponentB as b
+
+
+    a -> b : someCallAltered
+
+@enduml
