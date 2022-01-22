@@ -7,8 +7,7 @@ This is a project to try out using [Mkdocs](https://www.mkdocs.org/), [PlantUML]
 
 To edit the pages and diagrams locally and preview the results as you work, the project uses [Gradle]() to 
 launch a couple of Docker containers:  Mkdocs serve instance and PlantUML diagram server. 
-The Mkdocs serve instance uses the PlantUML server to create SVG's from PlantUML files
-
+The Mkdocs serve instance uses the PlantUML server to create SVG's from PlantUML files. The following diagrams shows how this works:
 
 ### Starting
 
@@ -45,7 +44,8 @@ it does the following:
 
 ### Docker tips
 
-* `docker ps` - List all running Docker containers
-* `docker ps -a` - List all Docker containers running or shut down
-* `docker kill $(docker ps -a -q)` - Will stop all running Docker containers
-* `docker container rm $(docker ps -a -q) - Will remove all Docker containers
+* `docker ps` - lists all running Docker containers
+* `docker ps -a` - lists all Docker containers running or shut down
+* `docker kill $(docker ps -a -q)` - stops all running Docker containers
+* `docker container rm $(docker ps -a -q)` - removes all Docker containers
+* `docker logs -f [container name]` - tails the container log
