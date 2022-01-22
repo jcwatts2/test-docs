@@ -1,7 +1,7 @@
 # Test Documentation Project
 
 This is a project to try out using [Mkdocs](https://www.mkdocs.org/), [PlantUML](https://plantuml.com/), and [Github Actions](https://docs.github.com/en/actions) to build a
-[Github Pages Site](https://pages.github.com/), which can be view [here](https://jcwatts2.github.io/test-docs/).
+[Github Pages Site](https://pages.github.com/), which exists [here](https://jcwatts2.github.io/test-docs/).
 
 ## Local Dev Setup
 
